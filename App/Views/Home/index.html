@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}SmSochka{% endblock %}
 
 {% block body %}
 
@@ -10,6 +10,12 @@
     <ul>
         {% for colour in colours %}
             <li>{{ colour }}</li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for sms in text_sms%}
+        <li>{{ sms }}</li>
         {% endfor %}
     </ul>
 

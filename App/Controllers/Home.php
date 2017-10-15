@@ -9,6 +9,7 @@
 namespace App\Controllers;
 
 use \Core\View;
+use \App\Models\Sms;
 
 
 class Home extends \Core\Controller
@@ -26,13 +27,19 @@ class Home extends \Core\Controller
 
     public function indexAction()
     {
+
+        $last_sms = Sms::getLast();
+//        $category = Sms::getCategory(3);
+
 //        View::render('Home/index.php', [
 //            'name'    => 'Dave',
 //            'colours' => ['red', 'green', 'blue']
 //        ]);
+//dd($last_sms);
         View::renderTemplate('Home/index.html', [
-            'name'    => 'Dave',
-            'colours' => ['red', 'green', 'blue']
+//            'name'    => $category,
+            'colours' => ['red', 'green', 'blue'],
+            'text_sms' => $last_sms
         ]);
     }
 

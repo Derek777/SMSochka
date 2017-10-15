@@ -1,0 +1,4 @@
+[14-Oct-2017 23:32:04 Europe/Moscow] Uncaught exception: 'Exception' with message 'No route matched.'
+Shack trace: #0 D:\job\OpenServer\domains\SMSochka\public\index.php(53): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'D:\job\OpenServer\domains\SMSochka\Core\Router.php' on line 80
